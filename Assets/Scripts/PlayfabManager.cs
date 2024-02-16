@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayfabManager : MonoBehaviour
+public class PlayfabManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] InputField email;
     [SerializeField] InputField password;
