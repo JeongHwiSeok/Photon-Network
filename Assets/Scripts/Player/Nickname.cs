@@ -6,6 +6,7 @@ using TMPro;
 
 public class Nickname : MonoBehaviourPunCallbacks
 {
+    [SerializeField] Camera playerCamera;
     [SerializeField] TextMeshProUGUI nickName;
 
     // Start is called before the first frame update
@@ -17,6 +18,6 @@ public class Nickname : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        
+        transform.forward = Camera.main.transform.forward;
     }
 }

@@ -480,6 +480,7 @@ GameObject:
   - component: {fileID: 1500980135181230243}
   - component: {fileID: 4300469913827895838}
   - component: {fileID: 4393412788619167395}
+  - component: {fileID: 9050615266979737395}
   m_Layer: 0
   m_Name: NickName Text
   m_TagString: Untagged
@@ -604,3 +605,17 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9050615266979737395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405517151167276340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fdcbcefa80a404685041e285cd58d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1085247440614953200}
+  nickName: {fileID: 4393412788619167395}
