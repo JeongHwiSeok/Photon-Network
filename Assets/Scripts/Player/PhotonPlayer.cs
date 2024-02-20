@@ -15,7 +15,8 @@ public class PhotonPlayer : MonoBehaviourPun
 
     private void Awake()
     {
-        
+        speed = 5f;
+        rotateSpeed = 180f;
     }
 
     private void Start()
