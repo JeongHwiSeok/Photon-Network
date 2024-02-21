@@ -53,7 +53,7 @@ public class PhotonPlayer : MonoBehaviourPun
     public void Movement()
     {
         direction.x = Input.GetAxisRaw("Horizontal");
-        direction.y = Input.GetAxisRaw("Vertical");
+        direction.z = Input.GetAxisRaw("Vertical");
 
         direction.Normalize();
 

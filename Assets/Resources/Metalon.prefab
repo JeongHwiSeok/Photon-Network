@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 318740040769908644}
   - component: {fileID: 1184251519289618783}
   - component: {fileID: 8755510416072218510}
+  - component: {fileID: 240785253967449526}
   m_Layer: 0
   m_Name: Metalon
   m_TagString: Untagged
@@ -863,6 +864,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &240785253967449526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4127561305063795930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69af89226a3afa4792f938ec7d2c03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretPosition: {fileID: 0}
 --- !u!1 &4521087826176436033
 GameObject:
   m_ObjectHideFlags: 0
