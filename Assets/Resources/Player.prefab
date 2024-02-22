@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 497735609917128404}
   - component: {fileID: 1048967055862818109}
   - component: {fileID: 4604797473839651186}
+  - component: {fileID: 7032802995934032837}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -321,6 +322,7 @@ Transform:
   - {fileID: 3498216417700359407}
   - {fileID: 1828242335093543077}
   - {fileID: 2573333777202476749}
+  - {fileID: 3441835291771968960}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -453,6 +455,23 @@ MonoBehaviour:
   rotateSpeed: 0
   direction: {x: 0, y: 0, z: 0}
   temporaryCamare: {fileID: 1085247440614953200}
+--- !u!114 &7032802995934032837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491092984674541632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09985153f5a799442906b111ae966876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayCamera: {fileID: 1085247440614953200}
+  attack: 20
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &5411087678978984206
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +504,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2381015400792300458}
-  - {fileID: 3441835291771968960}
   m_Father: {fileID: 14460722481476523}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -562,7 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraRotationLimit: 60
   scrollSpeed: 100
-  sensitivity: 5
+  sensitivity: 400
   currentRotationX: 0
 --- !u!1 &8405517151167276340
 GameObject:
@@ -746,7 +764,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6354619800666371749}
-  m_Father: {fileID: 1828242335093543077}
+  m_Father: {fileID: 14460722481476523}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -763,8 +781,8 @@ Canvas:
   m_GameObject: {fileID: 8652638009782486401}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1085247440614953200}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

@@ -26,10 +26,10 @@ public class CameraManager : MonoBehaviour
 
         float cameraRotationX = xRotation * sensitivity;
 
-        currentRotationX -= cameraRotationX;
+        currentRotationX -= cameraRotationX * Time.deltaTime;
 
         currentRotationX = Mathf.Clamp(currentRotationX, -cameraRotationLimit, cameraRotationLimit);
 
-        transform.eulerAngles = new Vector3(currentRotationX, 0, 0);
+        transform.localEulerAngles = new Vector3(currentRotationX, 0, 0);
     }
 }

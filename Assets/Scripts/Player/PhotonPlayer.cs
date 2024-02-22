@@ -16,7 +16,7 @@ public class PhotonPlayer : MonoBehaviourPun
     private void Awake()
     {
         speed = 5f;
-        rotateSpeed = 180f;
+        rotateSpeed = 1200f;
     }
 
     private void Start()
@@ -36,14 +36,6 @@ public class PhotonPlayer : MonoBehaviourPun
     private void Update()
     {
         if (photonView.IsMine == false) return;
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            if(PhotonNetwork.IsMasterClient)
-            {
-                Debug.Log("Master Client");
-            }
-        }
 
         Movement();
 

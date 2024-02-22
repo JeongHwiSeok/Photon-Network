@@ -21,6 +21,10 @@ public class MouseManager : MonoBehaviour
         {
             SetMouse(MOUSETYPE.FREE);
         }
+        else if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            SetMouse(MOUSETYPE.LOCK);
+        }
     }
 
     public void LockMouse()
