@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour
 {
     [SerializeField] float cameraRotationLimit = 60f;
-    [SerializeField] float scrollSpeed = 100.0f;
+    // [SerializeField] float scrollSpeed;
     [SerializeField] float sensitivity = 10f;
 
     [SerializeField] float currentRotationX;
