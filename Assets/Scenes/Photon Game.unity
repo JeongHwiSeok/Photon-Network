@@ -840,8 +840,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30d3f4f7b9e24642895d782a1ffeb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeText: {fileID: 1878287274}
   nickNamePanel: {fileID: 1332754845}
   nickNameInputField: {fileID: 306607156}
+  timer: 70
 --- !u!1 &306607154
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,7 +72,13 @@ public class PhotonPlayer : MonoBehaviourPun, IPunObservable
         else // 원격 오브젝트라면 읽기 부분을 실행
         {
             // 네트워크를 통해서 데이터를 받음
-            score = (float)stream.ReceiveNext();
+            try
+            {
+                score = (float)stream.ReceiveNext();
+            }
+            catch
+            {
+            }
         }
     }
 }
